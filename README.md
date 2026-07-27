@@ -8,7 +8,7 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 > 💡 **New to Python?** If you are completely new to coding or don't know the core syntax of Python yet, please stop here and learn basic Python first! Data Structures require a strong grasp of loops, functions, and Object-Oriented Programming (OOP).
 > 
 > I have built a dedicated repository covering all fundamental concepts, syntax, and foundational exercises:
-> 🔗 **[Explore the BASIC_PYTHON Repository Here](https://github.com)** 👈
+> 🔗 **[Explore the BASIC_PYTHON Repository Here](https://github.com/Alpha1221-gif/BASIC_PYTHON)** 👈
 
 ---
 
