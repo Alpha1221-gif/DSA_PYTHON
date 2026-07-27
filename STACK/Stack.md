@@ -75,3 +75,13 @@ if __name__ == "__main__":
 1. 🟩 **Valid Parentheses** – Matching brackets using character stacks
 2. 🟨 **Evaluate Reverse Polish Notation** – Postfix math string parsing
 3. 🟨 **Min Stack** – Retrieving the minimum element in constant \(O(1)\) time
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
