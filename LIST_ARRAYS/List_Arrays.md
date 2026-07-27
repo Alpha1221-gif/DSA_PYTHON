@@ -67,3 +67,13 @@ if __name__ == "__main__":
 1. 🟩 **Two Sum** – Array mapping via hashing
 2. 🟨 **Container With Most Water** – Two-pointer boundary restriction
 3. 🟨 **Maximum Subarray (Kadane’s)** – $O(n)$ dynamic running computation
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
