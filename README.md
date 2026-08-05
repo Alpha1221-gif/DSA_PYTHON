@@ -9,9 +9,9 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 > 
 > I have built a dedicated repository covering all fundamental concepts, syntax, and foundational exercises:
 > 🔗 **[Explore the BASIC_PYTHON Repository Here](https://github.com/Alpha1221-gif/BASIC_PYTHON)** 👈
-
+>
 > I have built a dedicated repository covering all Object-Oriented Programming (OOP) concepts:
-> 🔗 **[Explore the PYTHON_OOPS Repository Here](https://github.com/Alpha1221-gif/BASIC_PYTHON)** 👈
+> 🔗 **[Explore the PYTHON_OOP Repository Here](https://github.com/Alpha1221-gif/BASIC_PYTHON)** 👈
 ---
 
 ## 🌟 Why Learn DSA with Python?
