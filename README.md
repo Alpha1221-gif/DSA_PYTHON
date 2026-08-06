@@ -31,23 +31,25 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 
 Python features built-in support for dynamic collections, but advanced, linear, and non-linear data structures require robust custom structures created via Python **Classes**, **Magic Methods (`__init__`, `__repr__`)**, and **Pointers**.
 
-### 1. Linear Data Structures
-* 📑 **Lists and Arrays**
+### 📋 Phase 1: Linear Data Structures (Complete)
+> These are the foundational blocks of data storage where elements are arranged sequentially.
+* 1. 📑 **Lists and Arrays**
   * Continuous memory allocation, indexing formulas, dynamic resizing tracking (\(O(1)\) lookups).
   * Array manipulation strategies: Two-Pointers, Sliding Window, and Prefix Sum mechanics.
-* 🥞 **Stacks (LIFO - Last In First Out)**
-  * Custom node-based implementations and Array-backed structures.
-  * Practical applications: Balancing parentheses, expression evaluation (Infix/Postfix/Prefix), and undo/redo systems.
-* ⏳ **Queues (FIFO - First In First Out)**
-  * Standard Queues, Deques (Double-ended), and Priority Queues using binary heaps.
-  * Practical applications: Task scheduling algorithms, print buffering, and Breadth-First Search queue management.
-* 🔗 **Linked Lists**
+* 2. 🔗 **Linked Lists**
   * **Singly Linked Lists:** Forward pointer traversals, node insertion, deletion, and sequence reversing techniques.
   * **Doubly Linked Lists:** Forward and backward navigation nodes for efficient tracking.
   * **Circular Linked Lists:** Seamless ring-buffer node linking where the tail references the head node.
+* 3. 🥞 **Stacks (LIFO - Last In First Out)**
+  * Custom node-based implementations and Array-backed structures.
+  * Practical applications: Balancing parentheses, expression evaluation (Infix/Postfix/Prefix), and undo/redo systems.
+* 4. ⏳ **Queues (FIFO - First In First Out)**
+  * Standard Queues, Deques (Double-ended), and Priority Queues using binary heaps.
+  * Practical applications: Task scheduling algorithms, print buffering, and Breadth-First Search queue management.
 
-### 2. Associative & Non-Linear Data Structures
-* 🔑 **Hash Tables**
+### 🔍 Phase 2: Elementary Algorithms (Uncovered Items)
+> 
+* 5. 🔑 ** Linear Search**
   * Direct key-value mappings via hashing engines.
   * Collision resolution deep-dives: Chaining (linked lists) vs. Open Addressing (Linear probing, Quadratic probing).
 * 🌳 **Trees & Advanced Hierarchies**
