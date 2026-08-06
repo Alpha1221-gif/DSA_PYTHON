@@ -65,7 +65,7 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
   * Constructing a sorted final array one entry at a time (highly efficient for near-sorted inputs).
   * Mimics how you sort a hand of playing cards by building a final sorted array one item at a time.
 
-### Phase 3: Fast Sorting & Lookup Tables
+### 📊` Phase 3: Fast Sorting & Lookup Tables
 > Moving into slightly more advanced frameworks to optimize time and memory properties.
 * (8). 🔑 **Hash Tables:**
    * Uses a function to map keys to values. Think of looking up numbers in a phone book. Excellent for constant-time lookups.
@@ -82,27 +82,28 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 * (12). 📦 **Radix Sort:**
     * Non-comparative sorting algorithm that processes digits or characters.
     * A non-comparison sorting algorithm that processes data digit by digit, from the least to the most significant.
+
+### 🚀 Phase 4: Non-Linear Hierarchical Data Structures
+> Move on to situations where data is completely coordinated with layers, loops, links, and matrices.
+* (13). 🌿 **Trees:**
+    * General structures featuring a root node and children nodes.
+* (14). 🌿 **Binary Trees:**
+     * A specific type of tree where each parent node has at most two children.
+     * A hierarchical structure where each node has a maximum of two child nodes.
+* (15). 🔍 **Binary Search Tree (BST):***
+    *  Highly optimized binary trees designed for fast searching, where left values are smaller and right values are larger.
+    *  A binary tree where left children hold smaller values and right children hold larger values.
+* (16). ⚖️ **AVL Trees:**
+    * Self-balancing Binary Search Trees that prevent the tree from becoming uneven.
+    * A self-balancing binary search tree where the heights of any node's two child subtrees differ by at most one.
+* (17). 🕸️ **Graphs:**
+    *  Networks of connected nodes (vertices) showing relationships, like friends on a social network or routes on a map.
+    *  A network structure made of vertices connected by edges to map complex, non-linear relationships.
 ---
 
 ## ⚙️ Master Syllabus: Algorithmic Paradigms
 
 > **Definition:** An algorithm is a precise, step-by-step mathematical recipe to execute complex computations, data parsing, and problem-solving.
-
-### 🔍 Search Algorithms
-* 📏 **Linear Search:** Simple sequential array parsing over unsorted structures (\(O(n)\) time complexity).
-* 🎯 **Binary Search:** Highly efficient divide-and-conquer strategy executed exclusively on sorted datasets (\(O(\log n)\) time complexity).
-
-### 🧼 Sorting Algorithms
-* 🛑 **Quadratic Sorts (\(O(n^2)\) Complexity):**
-  * **Bubble Sort:** Iterative adjacent-element swapping.
-  * **Selection Sort:** Repeatedly isolating the minimum element from the unsorted sub-array.
-  * **Insertion Sort:** Constructing a sorted final array one entry at a time (highly efficient for near-sorted inputs).
-* ⚡ **Logarithmic Sorts (\(O(n \log n)\) Complexity):**
-  * **Quick Sort:** Pivot-based array partitioning using divide-and-conquer processing.
-  * **Merge Sort:** Stable sorting paradigm that recursively divides arrays and merges sorted slices.
-* 📊 **Linear/Non-Comparison Sorts (\(O(n)\) Complexity):**
-  * **Counting Sort:** Frequency mapping array indexing for handling limited-range integers.
-  * **Radix Sort:** Digit-by-digit sorting using counting sort as an underlying stable subroutine.
 
 ### 🧠 Optimization Paradigms
 * 💰 **Greedy Algorithms:** Making the locally optimal choice at each step with the hope of finding a global optimum (e.g., Fractional Knapsack, Huffman Coding).
