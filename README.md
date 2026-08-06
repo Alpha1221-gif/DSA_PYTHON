@@ -33,7 +33,7 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 ---
 ### 📋 Phase 1: Linear Data Structures (Complete)
 > These are the foundational blocks of data storage where elements are arranged sequentially.
-* 1. 📑 **Lists and Arrays**
+* (1). 📑 **Lists and Arrays**
   * Continuous memory allocation, indexing formulas, dynamic resizing tracking (\(O(1)\) lookups).
   * Array manipulation strategies: Two-Pointers, Sliding Window, and Prefix Sum mechanics.
 * 2. 🔗 **Linked Lists**
