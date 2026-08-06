@@ -67,36 +67,36 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 
 ### 📊` Phase 3: Fast Sorting & Lookup Tables
 > Moving into slightly more advanced frameworks to optimize time and memory properties.
-* (8). 🔑 **Hash Tables:**
+* (10). 🔑 **Hash Tables:**
    * Uses a function to map keys to values. Think of looking up numbers in a phone book. Excellent for constant-time lookups.
    * A data structure that stores key-value pairs using a hash function for ultra-fast, direct data lookups.
-* (9). 🥞 **Merge Sort:**
+* (11). 🥞 **Merge Sort:**
    * Divide-and-conquer approach that splits arrays in half, sorts them, and merges them.
    * A sorting algorithm that recursively splits an array in half and then merges the sorted pieces back together.
-* (10). ⚡**Quick Sort:**
+* (12). ⚡**Quick Sort:**
    * Another highly efficient, widely used divide-and-conquer sorting algorithm.
    * A sorting algorithm that picks a pivot element and partitions the array into smaller and larger elements.
-* (11). 🔢 **Counting Sort:**
+* (13). 🔢 **Counting Sort:**
     * Special sorting technique that avoids comparing elements by counting frequencies.
     * A non-comparison sorting algorithm that counts the occurrences of each unique value to determine their final positions.
-* (12). 📦 **Radix Sort:**
+* (14). 📦 **Radix Sort:**
     * Non-comparative sorting algorithm that processes digits or characters.
     * A non-comparison sorting algorithm that processes data digit by digit, from the least to the most significant.
 
 ### 🚀 Phase 4: Non-Linear Hierarchical Data Structures
 > Move on to situations where data is completely coordinated with layers, loops, links, and matrices.
-* (13). 🌿 **Trees:**
+* (15). 🌿 **Trees:**
     * General structures featuring a root node and children nodes.
-* (14). 🌿 **Binary Trees:**
+* (16). 🌿 **Binary Trees:**
      * A specific type of tree where each parent node has at most two children.
      * A hierarchical structure where each node has a maximum of two child nodes.
-* (15). 🔍 **Binary Search Tree (BST):***
+* (17). 🔍 **Binary Search Tree (BST):***
     *  Highly optimized binary trees designed for fast searching, where left values are smaller and right values are larger.
     *  A binary tree where left children hold smaller values and right children hold larger values.
-* (16). ⚖️ **AVL Trees:**
+* (18). ⚖️ **AVL Trees:**
     * Self-balancing Binary Search Trees that prevent the tree from becoming uneven.
     * A self-balancing binary search tree where the heights of any node's two child subtrees differ by at most one.
-* (17). 🕸️ **Graphs:**
+* (19). 🕸️ **Graphs:**
     *  Networks of connected nodes (vertices) showing relationships, like friends on a social network or routes on a map.
     *  A network structure made of vertices connected by edges to map complex, non-linear relationships.
 ---
@@ -131,18 +131,36 @@ The files in this repository follow a uniform, highly readable structural layout
 ```text
 DSA_PYTHON/
 │
-├── 01_Data_Structures/
-│   ├── 01_Arrays/
-│   ├── 02_Linked_Lists/
-│   ├── 03_Stacks_Queues/
-│   └── 04_Trees_Graphs/
+├── README.md
 │
-├── 02_Algorithms/
-│   ├── 01_Searching/
-│   ├── 02_Sorting/
-│   └── 03_Dynamic_Programming/
+├── 01_Linear_Data_  Structures/
+│   ├── 01_LIST_ARRAY/
+│   ├── 02_LINKED_LIST/
+│   ├── 03_STACK/
+│   └── 04_QUEUES/
 │
-└── README.md
+├── 02_Elementary_Algorithms /
+│   ├── 05_LINEAR_SEARCH/
+│   ├── 06_BINARY_SEARCH/
+│   ├── 07_BUBBLE_SORT/
+│   ├── 08_SELECTION_SORT/
+│   └── 09_INSERTION_SORT/
+│ 
+├── 03_FAST_SORTING/
+│   ├── 10_HASH_TABLES/
+│   ├── 11_MERGE_SORT/
+│   ├── 12_QUICK_SORT/
+│   ├── 13_COUNTING_SORT/
+│   └── 14_RADIX_SORT/
+│
+├── 04_NON_LINEAR/
+│   ├── 15_TREES/
+│   ├── 16_BINARY_TREES/
+│   ├── 17_BINARY_SEARCH_TREE/
+│   ├── 18_AVL_TREES/
+│   └── 19_GRAPHS/
+│
+└── PRACTICE
 ```
 
 Each standalone `.py` file contains:
