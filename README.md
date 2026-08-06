@@ -52,19 +52,36 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 * (5). 📏 ** Linear Search**
   * Simple sequential array parsing over unsorted structures (\(O(n)\) time complexity).
   * Sequentially checking every single item until a match is found.
-* (6) 🎯 **Binary Search:**
+* (6). 🎯 **Binary Search:**
   * Highly efficient divide-and-conquer strategy executed exclusively on sorted datasets (\(O(\log n)\) time complexity).
   * A highly optimized searching technique that repeatedly divides a sorted list in half.
-* (7) 🧼 **Bubble Sort:**
+* (7). 🧼 **Bubble Sort:**
   * Iterative adjacent-element swapping.
   * A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are      in the wrong order.
-* (8) 🎯 **Selection Sort:**
+* (8). 🎯 **Selection Sort:**
    * Repeatedly isolating the minimum element from the unsorted sub-array.
    *  An algorithm that sorts an array by repeatedly finding the minimum element from the unsorted part and putting it at the        beginning.
-* (9) 🃏 **Insertion Sort:** 
+* (9). 🃏 **Insertion Sort:** 
   * Constructing a sorted final array one entry at a time (highly efficient for near-sorted inputs).
   * Mimics how you sort a hand of playing cards by building a final sorted array one item at a time.
 
+### Phase 3: Fast Sorting & Lookup Tables
+> Moving into slightly more advanced frameworks to optimize time and memory properties.
+* (8). 🔑 **Hash Tables:**
+   * Uses a function to map keys to values. Think of looking up numbers in a phone book. Excellent for constant-time lookups.
+   * A data structure that stores key-value pairs using a hash function for ultra-fast, direct data lookups.
+* (9). 🥞 **Merge Sort:**
+   * Divide-and-conquer approach that splits arrays in half, sorts them, and merges them.
+   * A sorting algorithm that recursively splits an array in half and then merges the sorted pieces back together.
+* (10). ⚡**Quick Sort:**
+   * Another highly efficient, widely used divide-and-conquer sorting algorithm.
+   * A sorting algorithm that picks a pivot element and partitions the array into smaller and larger elements.
+* (11). 🔢 **Counting Sort:**
+    * Special sorting technique that avoids comparing elements by counting frequencies.
+    * A non-comparison sorting algorithm that counts the occurrences of each unique value to determine their final positions.
+* (12). 📦 **Radix Sort:**
+    * Non-comparative sorting algorithm that processes digits or characters.
+    * A non-comparison sorting algorithm that processes data digit by digit, from the least to the most significant.
 ---
 
 ## ⚙️ Master Syllabus: Algorithmic Paradigms
