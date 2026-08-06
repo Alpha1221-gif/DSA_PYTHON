@@ -30,7 +30,7 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 > **Definition:** Data Structures are specialized formats for organizing, processing, storing, and retrieving data in a computer so that operations can be performed efficiently.
 
 Python features built-in support for dynamic collections, but advanced, linear, and non-linear data structures require robust custom structures created via Python **Classes**, **Magic Methods (`__init__`, `__repr__`)**, and **Pointers**.
-
+---
 ### 📋 Phase 1: Linear Data Structures (Complete)
 > These are the foundational blocks of data storage where elements are arranged sequentially.
 * 1. 📑 **Lists and Arrays**
@@ -48,7 +48,7 @@ Python features built-in support for dynamic collections, but advanced, linear, 
   * Practical applications: Task scheduling algorithms, print buffering, and Breadth-First Search queue management.
 
 ### 🔍 Phase 2: Elementary Algorithms (Uncovered Items)
-> 
+> Now that you know how to store data linearly, learn how to move, find and organize it efficiently.
 * 5. 🔑 ** Linear Search**
   * Direct key-value mappings via hashing engines.
   * Collision resolution deep-dives: Chaining (linked lists) vs. Open Addressing (Linear probing, Quadratic probing).
