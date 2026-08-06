@@ -94,13 +94,13 @@ Python features built-in support for dynamic collections, but advanced, linear, 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Array / Dynamic List** | \(O(n)\) | \(O(1)\) amortized | \(O(n)\) | \(O(n)\) | \(O(n)\) |
 | **Linked List** | \(O(n)\) | \(O(1)\) | \(O(1)\) | \(O(n)\) | \(O(n)\) |
-| **Stack / Queue** | \(O(n)\) | \(O(1)\) | \(O(1)\) | \(O(n)\) | \(O(n)\) |
+| **Stack / Queue** | — | \(O(1)\) | \(O(1)\) | \(O(1)\) | \(O(n)\) |
 | **Binary Search Tree** | \(O(\log n)\) | \(O(\log n)\) | \(O(\log n)\) | \(O(n)\) | \(O(n)\) |
 | **AVL Tree (Balanced)** | \(O(\log n)\) | \(O(\log n)\) | \(O(\log n)\) | \(O(\log n)\) | \(O(n)\) |
 | **Binary Search** | \(O(\log n)\) | — | — | \(O(\log n)\) | \(O(1)\) |
-| **Merge Sort / Quick Sort** | — | — | — | \(O(n \log n)\) | \(O(n)\) / \(O(\log n)\) |
+| **Merge Sort** | — | — | — | \(O(n \log n)\) | \(O(n)\) |
+| **Quick Sort** | — | — | — | \(O(n^2)\) | \(O(\log n)\) |
 
----
 
 ## 🛠️ Repository Directory & Blueprint Structure
 The files in this repository follow a uniform, highly readable structural layout:
