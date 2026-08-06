@@ -36,31 +36,34 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 * (1). 📑 **Lists and Arrays**
   * Continuous memory allocation, indexing formulas, dynamic resizing tracking (\(O(1)\) lookups).
   * Array manipulation strategies: Two-Pointers, Sliding Window, and Prefix Sum mechanics.
-* 2. 🔗 **Linked Lists**
+* (2). 🔗 **Linked Lists**
   * **Singly Linked Lists:** Forward pointer traversals, node insertion, deletion, and sequence reversing techniques.
   * **Doubly Linked Lists:** Forward and backward navigation nodes for efficient tracking.
   * **Circular Linked Lists:** Seamless ring-buffer node linking where the tail references the head node.
-* 3. 🥞 **Stacks (LIFO - Last In First Out)**
+* (3). 🥞 **Stacks (LIFO - Last In First Out)**
   * Custom node-based implementations and Array-backed structures.
   * Practical applications: Balancing parentheses, expression evaluation (Infix/Postfix/Prefix), and undo/redo systems.
-* 4. ⏳ **Queues (FIFO - First In First Out)**
+* (4). ⏳ **Queues (FIFO - First In First Out)**
   * Standard Queues, Deques (Double-ended), and Priority Queues using binary heaps.
   * Practical applications: Task scheduling algorithms, print buffering, and Breadth-First Search queue management.
 
 ### 🔍 Phase 2: Elementary Algorithms (Uncovered Items)
 > Now that you know how to store data linearly, learn how to move, find and organize it efficiently.
-* 5. 🔑 ** Linear Search**
-  * Direct key-value mappings via hashing engines.
-  * Collision resolution deep-dives: Chaining (linked lists) vs. Open Addressing (Linear probing, Quadratic probing).
-* 🌳 **Trees & Advanced Hierarchies**
-  * **General Trees:** Hierarchical data architectures, parent-child multi-node references.
-  * **Binary Trees:** Strict structural layouts where nodes have at most two child nodes.
-  * **Binary Search Trees (BST):** Fast search structures leveraging left-child \(<\) parent \(<\) right-child positioning rules.
-  * **AVL Trees (Self-Balancing BSTs):** Auto-balancing structures maintaining strict height balances (\(O(\log n)\) max) through Left/Right single and double tree rotations.
-* 🕸️ **Graphs**
-  * Non-linear nodes (vertices) connected by edges.
-  * Structural matrix representations: Adjacency Matrices vs. Adjacency Lists.
-  * Graph traversals: Exhaustive Depth-First Search (DFS) and layered Breadth-First Search (BFS).
+* (5). 📏 ** Linear Search**
+  * Simple sequential array parsing over unsorted structures (\(O(n)\) time complexity).
+  * Sequentially checking every single item until a match is found.
+* (6) 🎯 **Binary Search:**
+  * Highly efficient divide-and-conquer strategy executed exclusively on sorted datasets (\(O(\log n)\) time complexity).
+  * A highly optimized searching technique that repeatedly divides a sorted list in half.
+* (7) 🧼 **Bubble Sort:**
+  * Iterative adjacent-element swapping.
+  * A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are      in the wrong order.
+* (8) 🎯 **Selection Sort:**
+   * Repeatedly isolating the minimum element from the unsorted sub-array.
+   *  An algorithm that sorts an array by repeatedly finding the minimum element from the unsorted part and putting it at the        beginning.
+* (9) 🃏 **Insertion Sort:** 
+  * Constructing a sorted final array one entry at a time (highly efficient for near-sorted inputs).
+  * Mimics how you sort a hand of playing cards by building a final sorted array one item at a time.
 
 ---
 
