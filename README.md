@@ -9,7 +9,9 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 > 
 > I have built a dedicated repository covering all fundamental concepts, syntax, and foundational exercises:
 > 🔗 **[Explore the BASIC_PYTHON Repository Here](https://github.com/Alpha1221-gif/BASIC_PYTHON)** 👈
-
+>
+> I have built a dedicated repository covering all Object-Oriented Programming (OOP) concepts:
+> 🔗 **[Explore the PYTHON_OOP Repository Here](https://github.com/Alpha1221-gif/PYTHON_OOP)** 👈
 ---
 
 ## 🌟 Why Learn DSA with Python?
@@ -27,58 +29,81 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 
 > **Definition:** Data Structures are specialized formats for organizing, processing, storing, and retrieving data in a computer so that operations can be performed efficiently.
 
-Python features built-in support for dynamic collections, but advanced, linear, and non-linear data structures require robust custom structures created via Python **Classes**, **Magic Methods (`__init__`, `__repr__`)**, and **Pointers**.
-
-### 1. Linear Data Structures
-* 📑 **Lists and Arrays**
+* Python features built-in support for dynamic collections, but advanced, linear, and non-linear data structures require robust custom structures created via Python **Classes**, **Magic Methods (`__init__`, `__repr__`)**, and **Pointers**.
+---
+### 📋 Phase 1: Linear Data Structures (Complete)
+> These are the foundational blocks of data storage where elements are arranged sequentially.
+* (1). 📑 **Lists and Arrays**
   * Continuous memory allocation, indexing formulas, dynamic resizing tracking (\(O(1)\) lookups).
   * Array manipulation strategies: Two-Pointers, Sliding Window, and Prefix Sum mechanics.
-* 🥞 **Stacks (LIFO - Last In First Out)**
-  * Custom node-based implementations and Array-backed structures.
-  * Practical applications: Balancing parentheses, expression evaluation (Infix/Postfix/Prefix), and undo/redo systems.
-* ⏳ **Queues (FIFO - First In First Out)**
-  * Standard Queues, Deques (Double-ended), and Priority Queues using binary heaps.
-  * Practical applications: Task scheduling algorithms, print buffering, and Breadth-First Search queue management.
-* 🔗 **Linked Lists**
+* (2). 🔗 **Linked Lists**
   * **Singly Linked Lists:** Forward pointer traversals, node insertion, deletion, and sequence reversing techniques.
   * **Doubly Linked Lists:** Forward and backward navigation nodes for efficient tracking.
   * **Circular Linked Lists:** Seamless ring-buffer node linking where the tail references the head node.
+* (3). 🥞 **Stacks (LIFO - Last In First Out)**
+  * Custom node-based implementations and Array-backed structures.
+  * Practical applications: Balancing parentheses, expression evaluation (Infix/Postfix/Prefix), and undo/redo systems.
+* (4). ⏳ **Queues (FIFO - First In First Out)**
+  * Standard Queues, Deques (Double-ended), and Priority Queues using binary heaps.
+  * Practical applications: Task scheduling algorithms, print buffering, and Breadth-First Search queue management.
 
-### 2. Associative & Non-Linear Data Structures
-* 🔑 **Hash Tables**
-  * Direct key-value mappings via hashing engines.
-  * Collision resolution deep-dives: Chaining (linked lists) vs. Open Addressing (Linear probing, Quadratic probing).
-* 🌳 **Trees & Advanced Hierarchies**
-  * **General Trees:** Hierarchical data architectures, parent-child multi-node references.
-  * **Binary Trees:** Strict structural layouts where nodes have at most two child nodes.
-  * **Binary Search Trees (BST):** Fast search structures leveraging left-child \(<\) parent \(<\) right-child positioning rules.
-  * **AVL Trees (Self-Balancing BSTs):** Auto-balancing structures maintaining strict height balances (\(O(\log n)\) max) through Left/Right single and double tree rotations.
-* 🕸️ **Graphs**
-  * Non-linear nodes (vertices) connected by edges.
-  * Structural matrix representations: Adjacency Matrices vs. Adjacency Lists.
-  * Graph traversals: Exhaustive Depth-First Search (DFS) and layered Breadth-First Search (BFS).
+### 🔍 Phase 2: Elementary Algorithms (Uncovered Items)
+> Now that you know how to store data linearly, learn how to move, find and organize it efficiently.
+* (5). 📏 ** Linear Search**
+  * Simple sequential array parsing over unsorted structures (\(O(n)\) time complexity).
+  * Sequentially checking every single item until a match is found.
+* (6). 🎯 **Binary Search:**
+  * Highly efficient divide-and-conquer strategy executed exclusively on sorted datasets (\(O(\log n)\) time complexity).
+  * A highly optimized searching technique that repeatedly divides a sorted list in half.
+* (7). 🧼 **Bubble Sort:**
+  * Iterative adjacent-element swapping.
+  * A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are      in the wrong order.
+* (8). 🎯 **Selection Sort:**
+   * Repeatedly isolating the minimum element from the unsorted sub-array.
+   *  An algorithm that sorts an array by repeatedly finding the minimum element from the unsorted part and putting it at the        beginning.
+* (9). 🃏 **Insertion Sort:** 
+  * Constructing a sorted final array one entry at a time (highly efficient for near-sorted inputs).
+  * Mimics how you sort a hand of playing cards by building a final sorted array one item at a time.
 
+### 📊` Phase 3: Fast Sorting & Lookup Tables
+> Moving into slightly more advanced frameworks to optimize time and memory properties.
+* (10). 🔑 **Hash Tables:**
+   * Uses a function to map keys to values. Think of looking up numbers in a phone book. Excellent for constant-time lookups.
+   * A data structure that stores key-value pairs using a hash function for ultra-fast, direct data lookups.
+* (11). 🥞 **Merge Sort:**
+   * Divide-and-conquer approach that splits arrays in half, sorts them, and merges them.
+   * A sorting algorithm that recursively splits an array in half and then merges the sorted pieces back together.
+* (12). ⚡**Quick Sort:**
+   * Another highly efficient, widely used divide-and-conquer sorting algorithm.
+   * A sorting algorithm that picks a pivot element and partitions the array into smaller and larger elements.
+* (13). 🔢 **Counting Sort:**
+    * Special sorting technique that avoids comparing elements by counting frequencies.
+    * A non-comparison sorting algorithm that counts the occurrences of each unique value to determine their final positions.
+* (14). 📦 **Radix Sort:**
+    * Non-comparative sorting algorithm that processes digits or characters.
+    * A non-comparison sorting algorithm that processes data digit by digit, from the least to the most significant.
+
+### 🚀 Phase 4: Non-Linear Hierarchical Data Structures
+> Move on to situations where data is completely coordinated with layers, loops, links, and matrices.
+* (15). 🌿 **Trees:**
+    * General structures featuring a root node and children nodes.
+* (16). 🌿 **Binary Trees:**
+     * A specific type of tree where each parent node has at most two children.
+     * A hierarchical structure where each node has a maximum of two child nodes.
+* (17). 🔍 **Binary Search Tree (BST):***
+    *  Highly optimized binary trees designed for fast searching, where left values are smaller and right values are larger.
+    *  A binary tree where left children hold smaller values and right children hold larger values.
+* (18). ⚖️ **AVL Trees:**
+    * Self-balancing Binary Search Trees that prevent the tree from becoming uneven.
+    * A self-balancing binary search tree where the heights of any node's two child subtrees differ by at most one.
+* (19). 🕸️ **Graphs:**
+    *  Networks of connected nodes (vertices) showing relationships, like friends on a social network or routes on a map.
+    *  A network structure made of vertices connected by edges to map complex, non-linear relationships.
 ---
 
 ## ⚙️ Master Syllabus: Algorithmic Paradigms
 
 > **Definition:** An algorithm is a precise, step-by-step mathematical recipe to execute complex computations, data parsing, and problem-solving.
-
-### 🔍 Search Algorithms
-* 📏 **Linear Search:** Simple sequential array parsing over unsorted structures (\(O(n)\) time complexity).
-* 🎯 **Binary Search:** Highly efficient divide-and-conquer strategy executed exclusively on sorted datasets (\(O(\log n)\) time complexity).
-
-### 🧼 Sorting Algorithms
-* 🛑 **Quadratic Sorts (\(O(n^2)\) Complexity):**
-  * **Bubble Sort:** Iterative adjacent-element swapping.
-  * **Selection Sort:** Repeatedly isolating the minimum element from the unsorted sub-array.
-  * **Insertion Sort:** Constructing a sorted final array one entry at a time (highly efficient for near-sorted inputs).
-* ⚡ **Logarithmic Sorts (\(O(n \log n)\) Complexity):**
-  * **Quick Sort:** Pivot-based array partitioning using divide-and-conquer processing.
-  * **Merge Sort:** Stable sorting paradigm that recursively divides arrays and merges sorted slices.
-* 📊 **Linear/Non-Comparison Sorts (\(O(n)\) Complexity):**
-  * **Counting Sort:** Frequency mapping array indexing for handling limited-range integers.
-  * **Radix Sort:** Digit-by-digit sorting using counting sort as an underlying stable subroutine.
 
 ### 🧠 Optimization Paradigms
 * 💰 **Greedy Algorithms:** Making the locally optimal choice at each step with the hope of finding a global optimum (e.g., Fractional Knapsack, Huffman Coding).
@@ -92,13 +117,13 @@ Python features built-in support for dynamic collections, but advanced, linear, 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Array / Dynamic List** | \(O(n)\) | \(O(1)\) amortized | \(O(n)\) | \(O(n)\) | \(O(n)\) |
 | **Linked List** | \(O(n)\) | \(O(1)\) | \(O(1)\) | \(O(n)\) | \(O(n)\) |
-| **Stack / Queue** | \(O(n)\) | \(O(1)\) | \(O(1)\) | \(O(n)\) | \(O(n)\) |
+| **Stack / Queue** | — | \(O(1)\) | \(O(1)\) | \(O(1)\) | \(O(n)\) |
 | **Binary Search Tree** | \(O(\log n)\) | \(O(\log n)\) | \(O(\log n)\) | \(O(n)\) | \(O(n)\) |
 | **AVL Tree (Balanced)** | \(O(\log n)\) | \(O(\log n)\) | \(O(\log n)\) | \(O(\log n)\) | \(O(n)\) |
 | **Binary Search** | \(O(\log n)\) | — | — | \(O(\log n)\) | \(O(1)\) |
-| **Merge Sort / Quick Sort** | — | — | — | \(O(n \log n)\) | \(O(n)\) / \(O(\log n)\) |
+| **Merge Sort** | — | — | — | \(O(n \log n)\) | \(O(n)\) |
+| **Quick Sort** | — | — | — | \(O(n^2)\) | \(O(\log n)\) |
 
----
 
 ## 🛠️ Repository Directory & Blueprint Structure
 The files in this repository follow a uniform, highly readable structural layout:
@@ -106,18 +131,36 @@ The files in this repository follow a uniform, highly readable structural layout
 ```text
 DSA_PYTHON/
 │
-├── 01_Data_Structures/
-│   ├── 01_Arrays/
-│   ├── 02_Linked_Lists/
-│   ├── 03_Stacks_Queues/
-│   └── 04_Trees_Graphs/
+├── README.md
 │
-├── 02_Algorithms/
-│   ├── 01_Searching/
-│   ├── 02_Sorting/
-│   └── 03_Dynamic_Programming/
+├── 01_Linear_Data_  Structures/
+│   ├── 01_LIST_ARRAY/
+│   ├── 02_LINKED_LIST/
+│   ├── 03_STACK/
+│   └── 04_QUEUES/
 │
-└── README.md
+├── 02_Elementary_Algorithms /
+│   ├── 05_LINEAR_SEARCH/
+│   ├── 06_BINARY_SEARCH/
+│   ├── 07_BUBBLE_SORT/
+│   ├── 08_SELECTION_SORT/
+│   └── 09_INSERTION_SORT/
+│ 
+├── 03_FAST_SORTING/
+│   ├── 10_HASH_TABLES/
+│   ├── 11_MERGE_SORT/
+│   ├── 12_QUICK_SORT/
+│   ├── 13_COUNTING_SORT/
+│   └── 14_RADIX_SORT/
+│
+├── 04_NON_LINEAR/
+│   ├── 15_TREES/
+│   ├── 16_BINARY_TREES/
+│   ├── 17_BINARY_SEARCH_TREE/
+│   ├── 18_AVL_TREES/
+│   └── 19_GRAPHS/
+│
+└── PRACTICE
 ```
 
 Each standalone `.py` file contains:
