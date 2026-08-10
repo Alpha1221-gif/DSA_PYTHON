@@ -74,7 +74,7 @@ from array import *
 val4 = array('i',[1,2,3,4,5,6])
 val4.append(7) #For insert a value in array at last index
 for i in val4:
-    print(i,end=" ")  #output = 0 1 2 3 4 5 6 7
+    print(i,end=" ")  #output =  1 2 3 4 5 6 7
 
 
 print('\n')
@@ -83,4 +83,70 @@ from array import *
 val5 = array('i',[1,2,3,8,5,6])
 val5[3] = 4 #For replace a value in array at 
 for i in val5:
-    print(i,end=" ")  #output = 0 1 2 3 4 5 6 
+    print(i,end=" ")  #output =  1 2 3 4 5 6 
+
+
+print('\n')
+# ----CODE12---- #
+from array import *
+val6 = array('i',[1,2,3,4,5,6])
+copyarray = array(val6.typecode,(x for x in val6)) #For copy the value in copyarray from val6
+for i in range(0,len(val6)):
+    print(copyarray[i],end = " ")  #output =  1 2 3 4 5 6 
+
+
+print('\n')
+# ----CODE13---- #
+from array import *
+val7 = array('i',[1,2,3,4,5,6])
+copyarray = array(val6.typecode,(x for x in val6)) 
+copyarray.pop(4) #Used for remove a element by using a index
+for i in range(0,len(copyarray)):
+    print(copyarray[i],end = " ")  #output =  1 2 3 4 6
+
+
+print('\n')
+# ----CODE14---- #
+from array import *
+val8 = array('i',[1,2,3,4,5,6])
+copyarray = array(val6.typecode,(x for x in val6)) 
+copyarray.remove(2) #Used for remove a particular element 
+for i in range(0,len(copyarray)):
+    print(copyarray[i],end = " ")  #output =  1 3 4 5 6
+
+
+print('\n')
+# ----CODE15---- #
+from array import *
+val9 = array('i',[1,2,3,4,5,6])
+a = val9[3:6] #Slicing
+for i in a:
+    print(i,end= " ")  #output = 4 5 6
+
+
+print('\n')
+# ----CODE16---- #
+from array import *
+val9 = array('i',[1,2,3,4,5,6])
+a = val9[::-1] # Reverse a Array
+for i in a:
+    print(i,end= " ")  #output = 6 5 4 3 2 1
+
+
+print('\n')
+# ----CODE17---- #
+from array import *
+val10 = array('i',[])
+n = int(input("Enter the total no:")) # Print and store the user input values 
+for i in range(0,n):
+    val10.append(int(input("Enter the no:")))
+
+for x in val10:
+    print(x,end= " ")
+'''Enter the total no:5
+Enter the no:5
+Enter the no:4
+Enter the no:3
+Enter the no:2
+Enter the no:1
+5 4 3 2 1 '''
