@@ -150,3 +150,12 @@ Enter the no:3
 Enter the no:2
 Enter the no:1
 5 4 3 2 1 '''
+
+
+print('\n')
+# ----CODE18---- #
+from array import *
+val11 = array('i',[10,20,30,40,50,60])
+i = val11.index(50) #Used to find the index of the element
+
+print("Index:",i)  #output = Index: 4
