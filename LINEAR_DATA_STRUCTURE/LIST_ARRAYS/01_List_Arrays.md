@@ -70,3 +70,13 @@ print(f"Reversed List: {reverse_list(my_list)}")
 ### 💡 Beginner Tips
 * **Index Errors**: Always remember that indexing starts at `0`. The last item is at index `len(my_list) - 1`.
 * **Negative Indexing**: Python lets you count backwards! `my_list[-1]` gives you the very last item.
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
