@@ -19,16 +19,16 @@ print('\n')
 # ----CODE3---- #
 for i in range(0,11):
     print(val[i],end=" ")
-#output = 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0
+#output = 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 
 
 print('\n') 
 # ----CODE4---- #
 for i in val:
     print(i,end=" ")
-#output = 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0
+#output = 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 
 
 
-val = array.array('w',['a','b','c','d']) #Here 'u' is used to store string value
+val = array.array('w',['a','b','c','d']) #Here 'w' full Unicode character
 print('\n')
 # ----CODE5---- #
 for i in range(0,len(val)):
@@ -81,7 +81,7 @@ print('\n')
 # ----CODE11---- #
 from array import *
 val5 = array('i',[1,2,3,8,5,6])
-val5[3] = 4 #For replace a value in array at 
+val5[3] = 4 #For replace a value in array 
 for i in val5:
     print(i,end=" ")  #output =  1 2 3 4 5 6 
 
