@@ -178,7 +178,7 @@ class Singly_LinkedList:
             temp = node(value)
             temp.next = self.head
             self.head = temp
-# Insertion at the Middle
+# Insertion at the end
     def at_end(self,value):
             temp = node(value)
             if(self.head != None): 
