@@ -41,7 +41,7 @@ def is_big(self,value):
 
 
 # Insertion at Middle
-def is_end(self,value,x):
+def is_mid(self,value,x):
     temp = node(value)
     t1 = self.head
     while(t1.next!=None):
