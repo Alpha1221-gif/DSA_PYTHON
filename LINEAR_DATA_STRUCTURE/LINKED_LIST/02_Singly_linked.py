@@ -132,6 +132,7 @@ a.printll()
 def deletell(self, value):
     # 1. Handle empty list
     if self.head is None:
+        print("List is Empty")
         return
         
     # 2. Handle deleting the head
@@ -191,6 +192,7 @@ class Singly_LinkedList:
 
     def deletell(self, value):
         if self.head is None:
+            print("List is Empty")
             return
         
         if self.head.info == value:

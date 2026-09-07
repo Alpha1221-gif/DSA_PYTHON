@@ -61,3 +61,9 @@ def is_mid(self,value,x):
 
     t1.next = temp
     temp.prev = t1
+
+
+# Delete the Linked List
+def deletell(self,value):
+    if self.head is None:
+        print("List is emp")
