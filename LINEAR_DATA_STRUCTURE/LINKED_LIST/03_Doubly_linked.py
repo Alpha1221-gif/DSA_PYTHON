@@ -71,12 +71,12 @@ def deletell(self,value):
     
     if self.head.info == value:
         self.head == self.head.next
-        if self.head is None:
+        if self.head is not None:
             self.head.prev = None
         return
 
     t1 = self.head
-    while t1 is not None and t1.info!=None:
+    while t1 is not None and t1.info!=value:
         t1 = t1.next
 
     if t1 is not None:
@@ -139,11 +139,11 @@ class doublelinkedlist:
             return 
         if self.head.info == value:
             self.head = self.head.next
-            if self.head is None:
+            if self.head is not None:
                 self.head.prev = None
             return
         t1 = self.head
-        while t1 is not None and t1.info!=None:
+        while t1 is not None and t1.info!=value:
             t1 = t1.next
         if t1 is None:
             print(f"Node with these value {value} is not found")
