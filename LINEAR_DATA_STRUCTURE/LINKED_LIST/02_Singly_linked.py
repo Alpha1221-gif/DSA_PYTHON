@@ -10,6 +10,18 @@ class SinglyLinkedList:
     def __init__(self,head=None):
         self.head = head
 
+# Print the LL
+    def printLL(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
+        t1 = self.head
+        while t1 is not None:  
+            print(t1.info,end=" -> ")     
+            t1 = t1.next  
+        print("None")
+
 # Insertion at the end
     def at_end(self,value):
         temp = node(value)
@@ -22,10 +34,15 @@ class SinglyLinkedList:
             self.head = temp
 
     def printLL(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
         t1 = self.head
         while t1 is not None:  
-            print(t1.info)     
+            print(t1.info,end=" -> ")     
             t1 = t1.next  
+        print("None")
         
 
 obj = SinglyLinkedList()
@@ -33,10 +50,7 @@ obj.at_end(10)
 obj.at_end(20)
 obj.at_end(30)
 obj.printLL()
-'''output =10
-           20
-            30 '''
-
+'''output = 10 -> 20 -> 30 -> None'''
 
 # ----CODE2---- #
 
@@ -57,19 +71,21 @@ class Singly_LinkedList:
         self.head = temp
 
     def printLL(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
         t1 = self.head
         while t1 is not None:  
-            print(t1.info)     
+            print(t1.info,end=" -> ")     
             t1 = t1.next  
+        print("None")
 obj = Singly_LinkedList()
 obj.at_beg(10)
 obj.at_beg(20)
 obj.at_beg(30)
 obj.printLL()
-'''output = 30
-            20
-            10'''
-
+'''output = 30 -> 20 -> 10 -> None'''
 
 # ----CODE3---- #
 
@@ -88,42 +104,25 @@ class Singly_LinkedList:
         temp = node(value)
         t1 = self.head
 
-        while(t1 != None):
+        while(t1 is not None):
             if(t1.info==x):
                 temp.next = t1.next
                 t1.next = temp
                 return
             t1 = t1.next
-    def  at_beg(self,value):
-            temp = node(value)
-            temp.next = self.head
-            self.head = temp
-
-    def at_end(self,value):
-            temp = node(value)
-            if(self.head != None): 
-                t1 = self.head
-                while(t1.next != None):
-                  t1 = t1.next
-                t1.next = temp
-            else:
-                self.head = temp
+        print(f"Value '{x}' not found in the list.")
 
     def printll(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
         t1 = self.head
-        while(t1 != None):
-            print(t1.info)
-            t1 = t1.next
-        
-        
-a = Singly_LinkedList()
-a.at_end(30)
-a.at_beg(10)
-a.at_mid(20,10)
-a.printll()
-'''output =10
-           20
-           30''' 
+        while t1 is not None:  
+            print(t1.info,end=" -> ")     
+            t1 = t1.next  
+        print("None")
+
 
 
 # ----CODE4---- #
@@ -147,6 +146,7 @@ def deletell(self, value):
             t1.next = t1.next.next  # Bypass the target node
             return                  # Node deleted, exit function
         t1 = t1.next                # Advance normally
+    print(f"Value '{value}' not found in the list.")
 
 
 # ----CODE5---- #
@@ -168,12 +168,13 @@ class Singly_LinkedList:
         temp = node(value)
         t1 = self.head
 
-        while(t1 != None):
+        while(t1 is not None):
             if(t1.info==x):
                 temp.next = t1.next
                 t1.next = temp
                 return
             t1 = t1.next
+        print(f"Value '{x}' not found in the list.")
 # Insertion at the Beginning
     def  at_beg(self,value):
             temp = node(value)
@@ -189,7 +190,7 @@ class Singly_LinkedList:
                 t1.next = temp
             else:
                 self.head = temp
-
+# Delete the Element
     def deletell(self, value):
         if self.head is None:
             print("List is Empty")
@@ -205,12 +206,18 @@ class Singly_LinkedList:
             t1.next = t1.next.next  
             return                 
           t1 = t1.next 
-
+        print(f"Value '{value}' not found in the list.")
+# Print the List
     def printll(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
         t1 = self.head
-        while(t1 != None):
-            print(t1.info)
-            t1 = t1.next
+        while t1 is not None:  
+            print(t1.info,end=" -> ")     
+            t1 = t1.next  
+        print("None")
         
         
 a = Singly_LinkedList()
@@ -219,13 +226,8 @@ a.at_beg(10)
 a.at_mid(20,10)
 a.at_mid(40,30)
 a.printll()
-'''output = 10
-            20
-            30
-            40'''
+'''output = 10 -> 20 -> 30 -> 40 -> None'''
 
 a.deletell(30)
 a.printll()
-'''output = 10
-            20
-            40'''
+'''output = 10 -> 20 -> 40 -> None'''

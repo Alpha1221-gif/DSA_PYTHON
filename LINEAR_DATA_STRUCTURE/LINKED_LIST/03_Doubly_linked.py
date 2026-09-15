@@ -10,10 +10,15 @@ class doublylinkedlist:
 
 # Print the linked list
 def printll(self):
-    t1 = self.head
-    while t1!=None:
-        print(t1.value)
-        t1 = t1.next
+        if self.head is None:
+            print("List is empty")
+            return
+        
+        t1 = self.head
+        while t1 is not None:  
+            print(t1.info,end=" -> ")     
+            t1 = t1.next  
+        print("None")
 
 
 # Insertion at the END
@@ -152,15 +157,18 @@ class doublelinkedlist:
         if t1.next is not None:
             t1.next.prev = t1.prev
     def printll(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
         t1 = self.head
-        while t1!=None:
-            print(t1.info)
-            t1 = t1.next
+        while t1 is not None:  
+            print(t1.info,end=" -> ")     
+            t1 = t1.next  
+        print("None")
 a = doublelinkedlist()
 a.is_big(10)
 a.is_mid(20,10)
 a.is_end(30)
 a.printll()
-"""Output = 10
-            20
-            30 """
+"""Output = 10 -> 20 -> 30 -> None """
