@@ -27,12 +27,13 @@ def is_end(self,value):
     if(self.head==None):
         self.head = temp
         return
-    else:
-     t1 = self.head
-     while(t1.next!=None):
-          t1 = t1.next
-     t1.next = temp
-     temp.prev = t1
+    
+    t1 = self.head
+    while t1.next is not None:
+        t1 = t1.next
+    t1.next = temp
+    temp.prev = t1
+    temp.next = None
 
 # Insertion at Beginning
 def is_big(self,value):
@@ -75,7 +76,7 @@ def deletell(self,value):
         return
     
     if self.head.info == value:
-        self.head == self.head.next
+        self.head = self.head.next
         if self.head is not None:
             self.head.prev = None
         return
@@ -84,7 +85,7 @@ def deletell(self,value):
     while t1 is not None and t1.info!=value:
         t1 = t1.next
 
-    if t1 is not None:
+    if t1 is  None:
         print(f"Value {value} is not found")
         return
 
@@ -132,12 +133,13 @@ class doublelinkedlist:
         if self.head is None:
             self.head = temp
             return
-        else:
-            t1 = self.head
-            while t1.next!=None:
-                t1 = t1.next
-            t1.next = temp
-            temp.prev = t1
+        
+        t1 = self.head
+        while t1.next is not None:
+            t1 = t1.next
+        t1.next = temp
+        temp.prev = t1
+        temp.next = None
     def deletell(self,value):
         if self.head is None:
             print("List is empty")
