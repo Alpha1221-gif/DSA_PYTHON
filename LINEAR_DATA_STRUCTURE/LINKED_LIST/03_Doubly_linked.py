@@ -33,7 +33,6 @@ def is_end(self,value):
         t1 = t1.next
     t1.next = temp
     temp.prev = t1
-    temp.next = None
 
 # Insertion at Beginning
 def is_big(self,value):
@@ -139,7 +138,6 @@ class doublelinkedlist:
             t1 = t1.next
         t1.next = temp
         temp.prev = t1
-        temp.next = None
     def deletell(self,value):
         if self.head is None:
             print("List is empty")
