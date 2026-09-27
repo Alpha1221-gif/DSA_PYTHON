@@ -116,7 +116,7 @@ class CircularDoublyLinkedList:
         self.head = None
 
     # Insertion at the beginning
-    def is_big(self, value):
+    def at_big(self, value):
         temp = Node(value)
         if self.head is None:
             self.head = temp
@@ -134,7 +134,7 @@ class CircularDoublyLinkedList:
         self.head = temp
 
     # Insertion after value 'x'
-    def is_mid(self, value, x):
+    def at_mid(self, value, x):
         if self.head is None:
             print("List is empty")
             return
@@ -156,7 +156,7 @@ class CircularDoublyLinkedList:
         print(f"Node with value {x} is not found")
 
     # Insertion at the end
-    def is_end(self, value):
+    def at_end(self, value):
         temp = Node(value)
         if self.head is None:
             self.head = temp
