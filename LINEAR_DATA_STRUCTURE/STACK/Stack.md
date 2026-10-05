@@ -14,81 +14,63 @@ A **Stack** is a linear data structure that follows the **LIFO (Last In, First O
 | **Is Empty** | O(1) | O(1) | Checks if the stack has no elements. |
 | **Size** | O(1) | O(1) | Returns the total number of elements. |
 
-> **Note on Python Lists:** While Python lists can act as stacks using `.append()` and `.pop()`, they are dynamic arrays. When a list needs to resize, an occasional O(n) amortized cost occurs. For a strict O(1) guarantee, `collections.deque` is preferred.
-
 ---
 
 ## 🛠️ Python Implementation
 
-This implementation uses `collections.deque` under the hood for optimal, thread-safe, and memory-efficient O(1) modifications from the top of the stack.
+This implementation uses a standard Python list to store elements, making it simple, readable, and easy to understand.
 
 ```python
-from collections import deque
-from typing import Any, Optional
-
 class Stack:
-    """A standard Object-Oriented implementation of a Stack using collections.deque."""
+    def __init__(self):
+        # Initialize an empty list to store stack elements
+        self.stack = []
 
-    def __init__(self) -> None:
-        """Initialize an empty stack."""
-        self._container: deque = deque()
+    def push(self, item):
+        # Add an item to the top of the stack
+        self.stack.append(item)
 
-    def push(self, item: Any) -> None:
-        """Add an item to the top of the stack."""
-        self._container.append(item)
-
-    def pop(self) -> Any:
-        """Remove and return the top item from the stack.
-        
-        Raises:
-            IndexError: If the stack is empty.
-        """
+    def pop(self):
+        # Remove and return the top item if the stack is not empty
         if self.is_empty():
-            raise IndexError("pop from an empty stack")
-        return self._container.pop()
+            return "Stack is empty"
+        return self.stack.pop()
 
-    def peek(self) -> Optional[Any]:
-        """Return the top item without removing it. Returns None if empty."""
+    def peek(self):
+        # Return the top item without removing it
         if self.is_empty():
             return None
-        return self._container[-1]
+        return self.stack[-1]
 
-    def is_empty(self) -> bool:
-        """Check if the stack contains no elements."""
-        return len(self._container) == 0
+    def is_empty(self):
+        # Return True if stack has no elements, else False
+        return len(self.stack) == 0
 
-    def size(self) -> int:
-        """Return the number of elements currently in the stack."""
-        return len(self._container)
-
-    def __str__(self) -> str:
-        """Provide a readable string representation of the stack state."""
-        return f"Stack(bottom -> {list(self._container)} <- top)"
+    def size(self):
+        # Return the total number of elements in the stack
+        return len(self.stack)
 
 
 # --- Demonstration of Usage ---
 if __name__ == "__main__":
-    # 1. Initialize Stack
-    history_stack = Stack()
+    my_stack = Stack()
 
-    # 2. Push elements
-    print("Pushing elements: 'google.com', 'github.com', 'stackoverflow.com'")
-    history_stack.push("google.com")
-    history_stack.push("github.com")
-    history_stack.push("stackoverflow.com")
-    print(history_stack)
+    # Pushing elements
+    print("Pushing elements...")
+    my_stack.push("google.com")
+    my_stack.push("github.com")
+    my_stack.push("stackoverflow.com")
 
-    # 3. Peek top element
-    print(f"Current Top (Peek): {history_stack.peek()}")
+    # Check the top element
+    print("Top element (Peek):", my_stack.peek())
 
-    # 4. Pop elements
-    print(f"Popped item: {history_stack.pop()}")
-    print(f"Popped item: {history_stack.pop()}")
-    print(history_stack)
+    # Popping elements
+    print("Popped item:", my_stack.pop())
+    print("Popped item:", my_stack.pop())
 
-    # 5. Check size and empty status
-    print(f"Stack size: {history_stack.size()}")
-    print(f"Is stack empty? {history_stack.is_empty()}")
+    # Check current state
+    print("Current Stack Size:", my_stack.size())
+    print("Is Stack Empty?", my_stack.is_empty())
 ```
 
 ---
@@ -102,3 +84,13 @@ Stacks are highly utilized across many computational problems. Look out for thes
 *   **Expression Evaluation / Parsing:** Converting or parsing infix expressions to postfix/prefix formats (e.g., LeetCode 224: *Basic Calculator*).
 *   **Backtracking & History Management:** Simulating undo/redo features or deep directory traversals (e.g., DFS algorithm).
 
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
