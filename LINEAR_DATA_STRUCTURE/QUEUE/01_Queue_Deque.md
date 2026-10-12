@@ -142,3 +142,12 @@ if __name__ == "__main__":
 | **Delete Front** / `popleft` | **O(1)** | **O(1)** | O(n) |
 | **Delete Rear** / `pop` | N/A | **O(1)** | O(1) |
 
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
