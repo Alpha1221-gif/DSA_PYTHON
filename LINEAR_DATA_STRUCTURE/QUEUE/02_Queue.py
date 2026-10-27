@@ -118,3 +118,56 @@ print(f"Final items in deque: {dq.items}")       # [10, 20]
 
 # Code for a Circular Queue
 
+class CircularQueue:
+    def __init__(self,size):
+        self.size = size
+        self.items = [None]*size
+        self.front = self.rear = -1
+    def is_empty(self):
+        return self.front == -1
+    def Enqueue(self,value):
+        if (self.rear + 1) % self.size == self.front:
+            print("Queue is full")
+        elif self.is_empty():
+            self.front = self.rear = 0
+            self.items[self.rear] = value
+        else:
+            self.rear = (self.rear + 1) % self.size
+            self.items[self.rear] = value
+    def Dequeue(self):
+        if self.is_empty():
+            print("Queue is Empty")
+            return None
+        removed_value = self.items[self.front]
+        if self.front == self.rear:
+            self.items[self.front] = None
+            self.front = self.rear = -1
+        else:
+            self.items[self.front] = None
+            self.front = (self.front + 1) % self.size
+        return removed_value
+    def peek(self):
+        if self.is_empty():
+            return "Queue is empty"
+        return self.items[self.front]
+    def display(self):
+        """Helper to print current queue state"""
+        print(f"Items: {self.items} | Front: {self.front} | Rear: {self.rear}")
+q = CircularQueue(3)
+
+q.Enqueue(10)
+q.Enqueue(20)
+q.Enqueue(30)
+q.display()  # Items: [10, 20, 30] | Front: 0 | Rear: 2
+
+q.Enqueue(40)  # Prints: Queue is full
+
+print("Popped:", q.Dequeue())  # Popped: 10
+q.display()  # Items: [None, 20, 30] | Front: 1 | Rear: 2
+
+# Wraparound enqueue
+q.Enqueue(40)
+q.display()  # Items: [40, 20, 30] | Front: 1 | Rear: 0
+
+print("Peek:", q.peek())  # Peek: 20
+        
