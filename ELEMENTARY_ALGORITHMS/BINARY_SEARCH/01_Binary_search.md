@@ -66,3 +66,13 @@ Binary search is used to **quickly locate items in large, sorted datasets** wher
 ### Space Complexity
 * **Iterative Approach: $O(1)$** — The iterative version (shown above) uses a fixed number of variables (`low`, `high`, `mid`) regardless of the array size, requiring constant extra space.
 * *(Note: A recursive implementation would require $O(\log n)$ space due to the call stack).*
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
