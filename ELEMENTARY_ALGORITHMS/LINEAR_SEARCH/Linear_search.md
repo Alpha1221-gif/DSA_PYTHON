@@ -66,3 +66,13 @@ if __name__ == "__main__":
 * **Total Space: $O(1)$**
   * It operates as an **in-place algorithm**. It only requires a constant amount of extra memory for variables like the loop counter (`index`), regardless of how large the input array grows.
 
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+   python3 02_Algorithms/02_Sorting/merge_sort.py
+   ```
+
