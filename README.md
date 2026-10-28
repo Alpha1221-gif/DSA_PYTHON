@@ -49,7 +49,7 @@ A comprehensive, step-by-step masterclass repository for mastering **Data Struct
 
 ### 🔍 Phase 2: Elementary Algorithms (Uncovered Items)
 > Now that you know how to store data linearly, learn how to move, find and organize it efficiently.
-* (5). 📏 **Linear Search**
+* (5). 📏 **Linear Search:**
   * Simple sequential array parsing over unsorted structures (\(O(n)\) time complexity).
   * Sequentially checking every single item until a match is found.
 * (6). 🎯 **Binary Search:**
