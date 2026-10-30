@@ -65,3 +65,39 @@ result = binary_search_even(even_arr, target_value)
 print(f"Element found at index: {result}")
 
 # OUTPUT = Element found at index: 4
+
+
+#  ----  Binary search by using RECURSION  ----  #
+
+def binary_search_recursive(arr,target,start,end):
+
+    # 1. Base case: Not found
+    if start > end:
+        return -1
+    
+    # 2. Find middle
+    mid = start + (end-start) // 2
+
+    # 3. Found target
+    if arr[mid] == target:
+        return mid
+    
+    # 4. Search left side
+    elif target < arr[mid]:
+       return binary_search_recursive(arr,target,start,mid-1)
+    
+    # 5. Search right side
+    else:
+        return binary_search_recursive(arr,target,mid+1,end)
+
+arr = [2,4,6,8,10,12]
+target_value = 10
+
+# Always pass 0 for start, and len(arr) - 1 for end
+result = binary_search_recursive(arr,target_value,0,len(arr)-1)
+print(result) # Output: 4
+
+    
+    
+
+
