@@ -61,3 +61,49 @@ class Solution:
                 return False
 
         return True
+
+
+#  ----  PROBLEM5  ----  #
+
+'''Given a sorted array arr consisting of 0s and 1s. The task is to find the index (0-based indexing)
+ of the first 1 in the given array'''
+
+class Solution:
+    def firstIndex(self, arr):
+
+        for num in arr:
+            if num not in (0, 1):
+                raise ValueError(f"Invalid input: {num}. Array must only contain 0s and 1s.")
+            
+        for i in range(len(arr)):
+            if arr[i] == 1:
+                return i
+        return -1 
+
+
+#  ----  PROBLEM6  ----  #
+
+'''Given a string s, remove all consonants and return the modified string containing only vowels.
+If the string does not contain any vowels, return an empty string.'''
+
+class solution:
+    def consonants(self,s):
+        vowels = "aeiouAEIOU"
+        result = []
+        for i in s:
+            if i is vowels:
+                result.append(i)
+        return "".join(result)
+
+
+#  ----  PROBLEM7  ----  #
+
+'''Given an array arr and an integer b, traverse the array (from the beginning) and if the element in array 
+is b, double b and continue traversal. Find the value of b after the complete traversal.'''
+
+class Solution:
+    def getModifiedValue(self, arr, b):
+        for num in arr:
+            if num == b:
+                b *= 2  # Double b and continue the traversal
+        return b
