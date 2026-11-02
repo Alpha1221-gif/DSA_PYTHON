@@ -74,5 +74,3 @@ Binary search is used to **quickly locate items in large, sorted datasets** wher
 ## 📝 License
 
 This project is open-source and available under the [MIT License](LICENSE).
-   python3 02_Algorithms/02_Sorting/merge_sort.py
-   ```
