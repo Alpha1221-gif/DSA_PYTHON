@@ -47,3 +47,11 @@ While Bubble Sort is rarely used in production applications due to its $O(n^2)$ 
 * 🏎️ **Nearly Sorted Data:** It is highly efficient for data collections that are already almost sorted, requiring only a few checks.
 * 💾 **Memory-Constrained Systems:** Useful in small, embedded systems where memory overhead must be minimized ($O(1)$ space).
 * 🔒 **Computer Graphics:** Used in graphics processing pipelines to detect tiny out-of-order anomalies (like polygon sorting) where objects shift only slightly between frames.
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
