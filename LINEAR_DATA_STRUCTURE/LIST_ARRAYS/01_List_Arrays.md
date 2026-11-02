@@ -78,5 +78,3 @@ print(f"Reversed List: {reverse_list(my_list)}")
 ## 📝 License
 
 This project is open-source and available under the [MIT License](LICENSE).
-   python3 02_Algorithms/02_Sorting/merge_sort.py
-   ```
