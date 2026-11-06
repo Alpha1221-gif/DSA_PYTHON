@@ -49,3 +49,11 @@ if __name__ == "__main__":
 * ⚙️ **Hybrid Sorting (Timsort & IntroSort):** Standard library sort functions (like Python’s `sort()`) use hybrid algorithms. They use Merge or Quick Sort for massive inputs, but switch to **Insertion Sort for small arrays (under 64 elements)** due to its ultra-low overhead.
 * 📶 **Online/Streaming Data:** If you receive numbers one by one (like live stock tickers), Insertion Sort inserts the new item into a pre-sorted list in quick $O(n)$ time.
 * 🧹 **Nearly Sorted Lists:** If a list is already mostly sorted (with just a few misplaced elements), Insertion Sort cleans it up faster than advanced algorithms.
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
