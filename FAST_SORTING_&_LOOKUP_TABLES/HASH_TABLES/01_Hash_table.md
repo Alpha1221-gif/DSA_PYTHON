@@ -126,3 +126,11 @@ print("Banana price:", ht.get("banana")) # Output: None
 * 🔐 **Password Verification:** Websites store cryptographic hashes of passwords rather than plain text to verify logins securely.
 * 🧬 **Counting & Deduplication:** Quickly finding duplicate items in a dataset or counting word frequencies (e.g., using Python's `collections.Counter`).
 * 🌐 **DNS Resolution:** Mapping human-readable domain names (like `google.com`) to their corresponding IP addresses.
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
