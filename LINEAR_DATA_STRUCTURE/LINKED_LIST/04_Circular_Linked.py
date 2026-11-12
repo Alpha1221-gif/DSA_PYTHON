@@ -11,7 +11,7 @@ class circularlinkedlist:
         temp = node(value)
         if self.head is None:
             self.head = temp
-            temp.next = self.head
+            temp.next = temp
             return
 
         t1 = self.head
@@ -40,7 +40,7 @@ class circularlinkedlist:
         temp = node(value)
         if self.head is None:
             self.head = temp
-            temp.next = self.head
+            temp.next = temp
             return
         t1 = self.head
         while t1.next!=self.head:
