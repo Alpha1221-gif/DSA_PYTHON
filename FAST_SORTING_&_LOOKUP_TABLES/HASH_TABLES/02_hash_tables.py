@@ -56,3 +56,4 @@ ht.insert("cherry", 30)
 
 print(ht.get("banana"))  # Output: 20
 print(ht.table)  # Shows the flat array with (key, value) tuples
+# [None, ('apple', 10), ('cherry', 30), None, ('banana', 20)]
