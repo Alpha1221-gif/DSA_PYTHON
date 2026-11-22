@@ -168,3 +168,53 @@ def union_arrays(a, b):
 
     # Return the distinct elements as a list (any order is valid)
     return list(union_set)
+
+
+# //---- QUESTION(9) ----// #
+'''Given an integer array arr[], find the element that appears most frequently. If multiple elements 
+have the same highest frequency, return the largest among them.'''
+
+def most_frequent_largest(arr):
+    # Dictionary to store how many times each element appears
+    freq = {}
+    for val in arr:
+        # Increment count for 'val' (defaulting to 0 if not seen yet)
+        freq[val] = freq.get(val, 0) + 1
+
+    # Track the best element found so far and its frequency
+    best_val = None
+    max_freq = 0
+
+    # Check each unique element and its count
+    for val, count in freq.items():
+        # Pick 'val' if it appears more often, or ties in frequency and is larger
+        if count > max_freq or (count == max_freq and val > best_val):
+            max_freq = count
+            best_val = val
+
+    # Return the winning element (or None if arr is empty)
+    return best_val
+
+
+# //---- QUESTION(10) ----// #
+'''Given an array arr[] of n integers and a target value, check if there
+ exists a pair whose sum equals the target.'''
+
+
+def has_pair_with_sum(arr, target):
+    # Stores elements seen so far for fast O(1) lookup
+    seen = set()
+
+    for num in arr:
+        # The complement needed to reach 'target'
+        needed = target - num
+
+        # If the partner number was already seen, a valid pair exists
+        if needed in seen:
+            return True
+
+        # Record current number for future pairs
+        seen.add(num)
+
+    # No pair found
+    return False
