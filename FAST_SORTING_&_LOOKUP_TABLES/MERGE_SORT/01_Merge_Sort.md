@@ -88,3 +88,11 @@ if __name__ == "__main__":
    * **Use Case:** Recommendation engines (e.g., comparing how similar two users' movie rankings are).
    * **Why:** A slight modification to the merge step counts how far an array is from being sorted, which helps calculate similarity metrics.
 
+
+---
+🚀 **Happy Coding!** Feel free to clone this repository and practice these methods.
+
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
