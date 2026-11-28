@@ -15,5 +15,33 @@ def sortedarr(arr):
 
 
 # -- // -- -- QUESTION(2) -- -- \\ -- #
+'''Given a string consisting of lowercase letters, arrange all its letters in ascending order'''
 
-''''''
+s = "dcba"
+result = "".join(sorted(s))
+print(result)  # "abcd"
+
+# -- // -- -- QUESTION(3) -- -- \\ -- #
+'''Given an n * n matrix mat[][], sort all the elements of the matrix in non-decreasing 
+order and return the resulting matrix.'''
+
+def sort_matrix(mat):
+    n = len(mat)
+
+    # 1. Flatten the n x n matrix into one list
+    flat = [val for row in mat for val in row]
+
+    # 2. Sort all elements in non-decreasing order
+    flat.sort()
+
+    # 3. Rebuild the n x n matrix row by row
+    return [flat[i * n : (i + 1) * n] for i in range(n)]
+
+mat = [
+    [5, 4, 7],
+    [1, 3, 8],
+    [2, 9, 6],
+]
+
+print(sort_matrix(mat))
+# [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
